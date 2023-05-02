@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Stockify</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <div class="logo">
+            <img src="https://avatars.githubusercontent.com/u/7644688?s=280&v=4" alt="Company Logo">
+          </div>
+          <div class="search">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+          </div>
+          <nav class="elements">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Info</a></li>
+            </ul>
+          </nav>
+    </header>
+<body>
+<!--ticker tape scrolling-->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text">Markets today</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "description": "NIFTY 50",
+        "proName": "NSE:NIFTY"
+      },
+      {
+        "description": "NASDAQ ",
+        "proName": "CURRENCYCOM:US100"
+      },
+      {
+        "description": "DOW JONES",
+        "proName": "TVC:DJI"
+      },
+      {
+        "description": "S&P 500",
+        "proName": "SP:SPX"
+      },
+      {
+        "description": "SENSEX",
+        "proName": "BSE:SENSEX"
+      },
+      {
+        "description": "GOLD/USDT",
+        "proName": "FOREXCOM:XAUUSD"
+      },
+      {
+        "description": "US OIL",
+        "proName": "TVC:USOIL"
+      },
+      {
+        "description": "USD/INR",
+        "proName": "FX_IDC:USDINR"
+      },
+      {
+        "description": "DOLLAR INDEX",
+        "proName": "TVC:DXY"
+      }
+    ],
+    "showSymbolLogo": true,
+    "colorTheme": "light",
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "locale": "in"
+  }
+    </script>
+  </div>
+<div class="grid">
+<div class="tradingview-widget-container">
+    <h2 style="text-align: center;">Indices</h2>
+
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/indices/" rel="noopener" target="_blank"><span class="blue-text">Indices</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+    {
+    "colorTheme": "light",
+    "dateRange": "12M",
+    "showChart": false,
+    "locale": "in",
+    "largeChartUrl": "",
+    "isTransparent": false,
+    "showSymbolLogo": true,
+    "showFloatingTooltip": false,
+    "width": "400",
+    "height": "380",
+    "tabs": [
+      {
+        "title": "Indices",
+        "symbols": [
+          {
+            "s": "FOREXCOM:SPXUSD",
+            "d": "S&P 500"
+          },
+          {
+            "s": "FOREXCOM:NSXUSD",
+            "d": "US 100"
+          },
+          {
+            "s": "FOREXCOM:DJI",
+            "d": "Dow 30"
+          },
+          {
+            "s": "NSE:NIFTY",
+            "d": "Nifty 50"
+          },
+          {
+            "s": "BSE:SENSEX",
+            "d": "SENSEX"
+          }
+        ],
+        "originalTitle": "Indices"
+      }
+    ]
+  }
+    </script>
+  </div>
+
+
+<div class="tradingview-widget-container">
+    <h2 style="text-align: center;">General</h2>
+
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/indices/" rel="noopener" target="_blank"><span class="blue-text">Indices</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+    {
+    "colorTheme": "light",
+    "dateRange": "12M",
+    "showChart": false,
+    "locale": "in",
+    "largeChartUrl": "",
+    "isTransparent": false,
+    "showSymbolLogo": true,
+    "showFloatingTooltip": false,
+    "width": "400",
+    "height": "380",
+    "tabs": [
+      {
+        "title": "Indices",
+        "symbols": [
+          {
+            "s": "BINANCE:BTCUSDT",
+            "d": "BTC/USDT"
+          },
+          {
+            "s": "FXOPEN:XAUUSD",
+            "d": "GOLD/USDT"
+          },
+          {
+            "s": "TVC:USOIL",
+            "d": "USOIL"
+          },
+          {
+            "s": "FX_IDC:USDINR",
+            "d": "US Dollar/INR"
+          },
+          {
+            "s": "TVC:DXY",
+            "d": "Dollar Index"
+          }
+        ],
+        "originalTitle": "Indices"
+      }
+    ]
+  }
+    </script>
+  </div>
+</div>
+    <!-- crypto-->
+    <h1 style="margin-top: 4rem;">Cryptocurrencies</h1>
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text">Crypto markets</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+    {
+    "width": 1200,
+    "height": 700,
+    "defaultColumn": "overview",
+    "screener_type": "crypto_mkt",
+    "displayCurrency": "USD",
+    "colorTheme": "light",
+    "locale": "in"
+  }
+  
+    </script>
+
+    <!-- news -->
+    <h1 style="text-align: center;">News Flow</h1>
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/key-events/" rel="noopener" target="_blank"><span class="blue-text">Daily news roundup</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+    {
+    "feedMode": "all_symbols",
+    "colorTheme": "light",
+    "isTransparent": false,
+    "displayMode": "regular",
+    "width": 1200,
+    "height": 830,
+    "locale": "in"
+  }
+    </script>
+  </div>
+<footer>
+    <div class="footer-container">
+      <div class="social-media">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+      <div class="about">
+        <h4>About Us</h4>
+        <p>We are a company that specializes in creating amazing web applications.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="more-info">
+        <h4>More Info</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  </body>
+</html>
